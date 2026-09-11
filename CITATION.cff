@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as follows."
 title: "Enzyme Kinetics Model Analyzer"
 authors:
-  - family-names: "Andrés"
-    given-names: "Ahumada"
+  - family-names: "Ahumada"
+    given-names: "Andrés"
 year: 2026
 url: "https://github.com/mortismain777-spec/enzyme-kinetics-model-analyzer"
 license: "Apache-2.0"
