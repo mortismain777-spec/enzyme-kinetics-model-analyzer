@@ -20,6 +20,19 @@ concentrations, inhibitor concentrations and triplicate velocity measurements.
    pip install -r requirements.txt
 2. Open and run `enzyme_kinetics_analysis.ipynb` in Google Colab or Jupyter Notebook.
 
+## Example results
+
+The demonstration dataset was best described by the noncompetitive
+inhibition model according to BIC.
+
+Estimated parameters:
+
+- Vmax: 54.58
+- Km: 2.06
+- Ki: 1.91
+
+![Model fit](results/model_fit.png)
+
 ## Limitations
 Model selection identifies the best-supported model among the candidates
 evaluated, but does not independently establish the biological inhibition
