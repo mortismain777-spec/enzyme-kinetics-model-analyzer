@@ -18,7 +18,7 @@ concentrations, inhibitor concentrations and triplicate velocity measurements.
 ## Running the project
 1. Install the required packages:
    pip install -r requirements.txt
-2. Run the notebook or Python script.
+2. Open and run `enzyme_kinetics_analysis.ipynb` in Google Colab or Jupyter Notebook.
 
 ## Limitations
 Model selection identifies the best-supported model among the candidates
