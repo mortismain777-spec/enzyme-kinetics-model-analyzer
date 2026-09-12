@@ -22,16 +22,42 @@ concentrations, inhibitor concentrations and triplicate velocity measurements.
 
 ## Example results
 
-The demonstration dataset was best described by the noncompetitive
-inhibition model according to BIC.
+Using the included demonstration dataset, the noncompetitive inhibition
+model obtained the lowest BIC among the evaluated models.
 
-Estimated parameters:
+| Model | MSE | AIC | BIC |
+|---|---:|---:|---:|
+| Noncompetitive | 0.1706 | -9.9157 | -9.3240 |
+| Competitive | 0.2333 | -7.0991 | -6.5074 |
+| Uncompetitive | 0.3477 | -3.5073 | -2.9157 |
+| No inhibitor | 6.9225 | 21.4130 | 21.8074 |
 
-- Vmax: 54.58
-- Km: 2.06
-- Ki: 1.91
+Estimated parameters for the selected model:
 
-![Model fit](results/model_fit.png)
+- Vmax = 54.58
+- Km = 2.06
+- Ki = 1.91
+
+### Model fit
+
+![Enzyme kinetics model fit](results/model_fit.png)
+
+### Substrate and inhibitor map
+
+![Substrate and inhibitor map](results/substrate_inhibitor_map.png)
+
+### Monte Carlo parameter stability
+
+![Monte Carlo parameter stability](results/monte_carlo_stability.png)
+
+### Monte Carlo distributions
+
+![Monte Carlo histograms](results/monte_carlo_histograms.png)
+
+### Result files
+
+- [Model comparison table](results/model_comparison.csv)
+- [Monte Carlo simulation results](results/monte_carlo_results.csv)
 
 ## Limitations
 Model selection identifies the best-supported model among the candidates
