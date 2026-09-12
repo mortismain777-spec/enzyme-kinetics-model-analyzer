@@ -20,6 +20,40 @@ concentrations, inhibitor concentrations and triplicate velocity measurements.
    pip install -r requirements.txt
 2. Open and run `enzyme_kinetics_analysis.ipynb` in Google Colab or Jupyter Notebook.
 
+## Using your own data
+
+1. Replace `data/Datos_experimento.csv` with your own CSV file.
+
+2. Keep the same filename, or change `FILE_NAME` in the notebook
+   to match the path and name of your file.
+
+3. The CSV must contain these columns:
+
+   - `S`: substrate concentration.
+   - `rep1`, `rep2`, `rep3`: three reaction velocity measurements.
+   - `I`: inhibitor concentration. Use zero only when no inhibitor
+     is present.
+
+4. Use consistent units throughout the dataset.
+
+5. Adjust the simulation settings in the notebook if needed:
+
+   - `SIGMA_MAX`: maximum standard deviation of the added noise,
+     in the same units as reaction velocity.
+   - `N_MONTE_CARLO`: number of simulations per noise level.
+   - `RANDOM_SEED`: seed used for reproducibility.
+
+6. Run the notebook from beginning to end.
+
+7. Generated tables and figures are saved in `results/`.
+   Files with the same names are overwritten when the analysis is run again.
+
+### Google Colab
+
+Opening the notebook from GitHub does not automatically download
+the CSV. Upload your CSV into a folder named `data`, or change
+`FILE_NAME` to its uploaded location.
+
 ## Example results
 
 Using the included demonstration dataset, the noncompetitive inhibition
