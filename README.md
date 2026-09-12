@@ -54,6 +54,18 @@ Opening the notebook from GitHub does not automatically download
 the CSV. Upload your CSV into a folder named `data`, or change
 `FILE_NAME` to its uploaded location.
 
+### Monte Carlo interpretation
+
+Parameter sensitivity is summarized using medians and 5th–95th
+percentiles. Logarithmic axes display the wide range of estimates
+without discarding extreme fits.
+
+The demonstration dataset does not reach substrate saturation,
+which limits the separate estimation of Vmax and Km as noise increases.
+
+These percentiles describe sensitivity to artificially added noise;
+they are not experimental confidence intervals.
+
 ## Example results
 
 Using the included demonstration dataset, the noncompetitive inhibition
